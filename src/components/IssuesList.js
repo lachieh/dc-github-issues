@@ -25,7 +25,7 @@ class IssuesList extends Component {
   render() {
     return (
       <div className="IssuesList">
-        {this.state.issues.map(issue => <Issue issue={issue} key={issue.id } />)}
+        {this.state.issues.map(issue => <Issue issue={issue} key={issue.id} />)}
       </div>
     )
   }

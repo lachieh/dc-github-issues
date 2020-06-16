@@ -34,7 +34,7 @@ function Issue(props) {
       <div className="Issue__details">
         <a href={issue.html_url} className="Issue__link">{ issue.title }</a>
         <div className="Issue__labels">
-          { issue.labels.map(label => <Label label={label} key={ label.id }/>)}
+          { issue.labels.map(label => <Label label={label} key={ label.id } />)}
         </div>
         <div className="Issue__meta">
           { getMetaFragment(issue) }
